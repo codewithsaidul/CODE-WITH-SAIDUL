@@ -12,6 +12,7 @@
     --bg-black-900: #000000;
     --bg-black-100: #dddddd;
     --bg-black-50: #eff0f4;
+    --bg-opacity: rgba(255, 255, 255, 0.5);
     --text-black-900: #000000;
     --text-black-600: #666666;
     --text-black-700: #555555;
@@ -26,6 +27,9 @@ body{
     line-height: 1.5;
     overflow-x: hidden;
     background-color: var(--bg-black-50);
+}
+body.hidden-scrolling{
+    overflow-y: hidden;
 }
 *{
     margin: 0;
@@ -767,6 +771,13 @@ Portfolio Section
     flex-wrap: wrap;
     width: 100%;
 }
+.portfolio-section .portfolio-item.hide{
+    display: none;
+}
+.portfolio-section .portfolio-item.show{
+    display: block;
+    animation: fadeInTop 0.5s ease;
+}
 .portfolio-section  .portfolio-item-inner{
     padding: 15px;
     border-radius: 5px;
@@ -827,6 +838,37 @@ portfolio popup
     overflow-y: scroll;
     opacity: 0;
     visibility: hidden;
+    transition: all 0.3s ease;
+}
+.portfolio-popup.open{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-popup .pp-loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1005;
+    background-color: var(--bg-opacity);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.portfolio-popup .pp-loader.active{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-popup .pp-loader div{
+    height: 40px;
+    width: 40px;
+    border: 3px solid var(--skin-color);
+    border-radius: 50%;
+    border-right: 3px solid transparent;
+    animation: spin 2s linear infinite;
 }
 .portfolio-popup .pp-details{
     max-width: 1350px;
@@ -835,6 +877,10 @@ portfolio popup
     max-height: 0;
     overflow: hidden;
     opacity: 0;
+    transition: all 0.5s ease;
+}
+.portfolio-popup .pp-details.active{
+    opacity: 1;
 }
 .portfolio-popup .details-title{
     padding: 0 15px;
@@ -911,7 +957,7 @@ portfolio popup
     width: 100%;
     display: block;
     background-color: var(--bg-black-100);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: -10px;
 }
 .portfolio-popup .pp-img {
