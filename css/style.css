@@ -106,6 +106,7 @@ img{
     border-radius: 30px;
     transition: all 0.3s ease;
     display: inline-block;
+    border: none;
 }
 .btn-1::after{
     border-radius: 30px;
@@ -473,7 +474,7 @@ img{
     padding: 0 15px;
     flex: 0 0 60%;
     max-width: 60%;
-    margin-top: 50px;
+    margin-top: 0px;
     text-align: justify;
 }
 .about-section .about-info p{
@@ -1134,7 +1135,6 @@ Testimonial Section
     width: 40px;
     height: 40px;
     color: var(--skin-color);
-    /*padding: 15px;*/
     display: inline-block;
     font-size: 20px;
     border-radius: 50%;
@@ -1149,3 +1149,81 @@ Testimonial Section
     border-radius: 50%;
 }
 
+/*===========================================
+Contact Section
+============================================*/
+.contact-section{
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
+.contact-section  .contact-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+    display: flex;
+}
+.contact-section  .contact-item-inner{
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
+.contact-section  .contact-item-inner i{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact-section  .contact-item-inner span{
+    display: block;
+    font-size: 16px;
+    color: var(--text-black-700);
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 15px 0 10px;
+}
+.contact-section  .contact-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-600);
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0;
+    word-break: break-word;
+}
+.contact-section .contact-form{ 
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px;
+}
+.contact-section .w-50{
+    padding: 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact-section .input-group{
+    margin:  0 0 15px;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+.contact-section .input-group::after{
+    border-radius: 30px;
+}
+.contact-section .input-group .input-control{
+    height: 45px;
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0 15px;
+    color: var(--text-black-700);
+}
+.contact-section .input-group  textarea.input-control{
+    height: 174px;
+    padding: 15px;
+}
+.contact-section .submite-btn{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+    padding: 0 15px;
+}
