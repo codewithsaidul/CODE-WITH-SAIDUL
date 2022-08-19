@@ -8,17 +8,28 @@
 
     <link rel="shortcut icon" href="./img/codewithsaidul.png" type="image/x-icon">
 
-    <!--======== Font Awesome Link= =========-->
+    <!--======== Font Awesome CDN Link= =========-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
     <!--========= Custome CSS Link ===========-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
-    <!--========== Skin Color CSS ==============-->
+    <!--========= Style Switcher CSS Link ===========-->
+    <link rel="stylesheet" href="./css/style-switcher.css">
+
+    <!--========== Defualt Skin Color CSS ==============-->
     <link rel="stylesheet" href="./css/skins/color-1.css">
+
+    <!--========== Skin Color CSS ==============-->
+    <link rel="stylesheet" type="text/css" href="./css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" type="text/css" href="./css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" type="text/css" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" type="text/css" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" type="text/css" href="./css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+
 </head>
-<body>
+<body class="dark">
 
     <!--=============== Header Start ================-->
     <header class="header">
@@ -44,19 +55,22 @@
         <div class="nav-menu-inner">
             <ul>
                 <li>
-                    <a href="#" class="inner-shadow active">home</a>
+                    <a href="#home" class="link-item inner-shadow active">home</a>
                 </li>
                 <li>
-                    <a href="#" class="outer-shadow hover-in-shadow">about</a>
+                    <a href="#about" class="link-item outer-shadow hover-in-shadow">about</a>
                 </li>
                 <li>
-                    <a href="#" class="outer-shadow hover-in-shadow">services</a>
+                    <a href="#services" class="link-item outer-shadow hover-in-shadow">services</a>
                 </li>
                 <li>
-                    <a href="#" class="outer-shadow hover-in-shadow">testimonial</a>
+                    <a href="#portfolio" class="link-item outer-shadow hover-in-shadow">portfolio</a>
                 </li>
                 <li>
-                    <a href="#" class="outer-shadow hover-in-shadow">contact</a>
+                    <a href="#testimonial" class="link-item outer-shadow hover-in-shadow">testimonial</a>
+                </li>
+                <li>
+                    <a href="#contact" class="link-item outer-shadow hover-in-shadow">contact</a>
                 </li>
             </ul>
         </div>
@@ -65,12 +79,14 @@
 
         <p class="copyright-text">&copy; 2022 CODEWITHSAIDUL</p>
     </nav>
+
+    <div class="fade-out-effect"></div>
     <!--================ Navigation Menu End =================-->
 
 
     <!--================ Home Section Start=================-->
 
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
 
          <!--=== Effect Wrap Start ===-->
 
@@ -104,7 +120,7 @@
                     <p>hello, i'm</p>
                     <h2>saidul islam rana</h2>
                     <h1>web desinger & developer</h1>
-                    <a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                    <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
                 </div>
 
                 <div class="home-img">
@@ -120,7 +136,7 @@
 
 
     <!--================ About Section Start =================-->
-    <section class="about-section section">
+    <section class="about-section section " id="about">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -152,7 +168,7 @@
                     <P>My vision is to teach programming to all people free of cost and make the world a better place. And I will prove that money is not a problem to learn.</p>
 
                     <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
-                    <a href="#" class="btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+                    <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
                 </div>
             </div>
 
@@ -394,7 +410,7 @@
 
 
     <!--================ Service Section Start =================-->
-    <section class="service-section section">
+    <section class="service-section section" id="services">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -480,7 +496,7 @@
 
 
     <!--================ Portfolio Section Start =================-->
-    <section class="portfolio-section section">
+    <section class="portfolio-section section" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -813,7 +829,7 @@
 
 
      <!--================= Testimonial Section Start ==================-->
-     <section class="testimonial-section section">
+     <section class="testimonial-section section" id="testimonial">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -872,7 +888,7 @@
 
 
      <!--================= Contact Section Start==================-->
-     <section class="contact-section section">
+     <section class="contact-section section" id="contact">
         <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -885,7 +901,7 @@
                     <!--==== contact item start ====-->
                     <div class="contact-item">
                         <div class="contact-item-inner outer-shadow">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone-flip"></i>
                                 <span>phone</span>
                                 <p>+880 160831 - 2126</p>
                         </div>
@@ -1012,9 +1028,29 @@
 
    
 
+    <!--========== Style Switcher Start - for demo purpose only ===============-->
+    <div class="style-switcher outer-shadow">
+            <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+                    <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon outer-shadow hover-in-shadow">
+                    <i class="fas"></i>
+            </div>
+
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+    </div>
+    <!--============ Style Switcher End ==============================-->
 
 
-
+    <!--================= Style Switcher JS Link ===================-->
+    <script src="./js/style-switcher.js"></script>
 
     <!--================= Main JS Link ===================-->
     <script src="./js/main.js"></script>
