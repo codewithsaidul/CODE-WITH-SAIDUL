@@ -24,9 +24,6 @@ window.addEventListener("scroll", () =>{
         }
     })
  }
- if(localStorage.getItem("color") !== null){
-    changeColor();
- }
 
  /*----------------------------- themes Light And Dark Mode -----------------------------------*/
 

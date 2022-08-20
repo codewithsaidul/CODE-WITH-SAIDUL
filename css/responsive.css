@@ -1,20 +1,163 @@
-<!--=== Testi item start ===-->
-                            <div class="testi-item">
-                                <i class="fas fa-quote-left left"></i>
-                                <i class="fas fa-quote-right right"></i>
-                                <p>Saidul is very good at what he does. He was able to deliver my landing page project very quickly. I recommend this worker 100%</p>
-                                <img src="./img/testi02.png" alt="testimonial">
-                                <h2>Mesut Özil<br><span>-founder & ceo people group</span>
-                                </h2>                   
-                            </div>
-                            <!--=== Testi item end ===-->
+/*------------- Media Querys -----------------*/
+@media screen and (max-width: 991px){
+    .portfolio-section .portfolio-item,
+    .service-section .service-item,
+    .contact-section  .contact-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 767px){
+    .header .logo a{
+        font-size: 20px;
+    }
+    .home-section .home-text, 
+    .home-section .home-img,
+    .about-section .about-img,
+    .about-section .about-info,
+    .about-section .skills .skills-item,
+    .about-section .skills .skills-item,
+    .about-section .timeline .timeline-item,
+    .portfolio-section .portfolio-item,
+    .portfolio-popup .description,
+    .portfolio-popup .info,
+    .service-section .service-item,
+    .contact-section  .contact-item,
+    .contact-section .w-50{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .portfolio-popup .info{
+        margin: 20px 0;
+    }
+    .home-section .home-text{
+        order: 2;
+        margin-top: -50px;
+    }
+    .home-section .home-text,
+    .contact-section .submite-btn{
+        text-align: center;
+    }
+    .home-section .full-screen{
+        padding: 100px 0;
+    }
+    .home-section .home-img .img-box{
+        margin-bottom: 00px;
+        max-width: 350px;
+    }
+    .home-section .home-text h2{
+        font-size: 45px;
+    }
+    .home-section .home-text h1{
+        font-size: 23px;
+    }
+    .effect-1{
+        bottom: 17%;
+    }
+    .effect-2{
+        bottom: 25%;
+    }
+    .effect-3{
+        margin-left: -60px;
+    }
+    .effect-4{
+        left: 15%;
+    }
+    .effect-5{
+        right: 4%;
+    }
+    .about-section .about-img{
+        padding-bottom: 60px;
+        max-width: 550px;
+        margin: auto;
+    }
+    .about-section .timeline .timeline-item{
+        margin-bottom: 40px;
+    }
+    .about-section .timeline .timeline-item:last-child{
+        margin-bottom: 0;
+    }
+    .about-section .timeline .timeline-item:nth-child(odd) {
+        padding-right: 15px;
+        text-align: left;
+        padding-left: 75px;
+    }
+    .about-section .timeline .timeline-item:nth-child(even) {
+        padding-left: 75px;
+    }
+    .about-section .timeline::before{
+        left: 25px;
+    }
+    .about-section .timeline .timeline-item:nth-child(odd) .icon {
+        right: 70px;
+        left: -70px;
+    }
+    .about-section .timeline .timeline-item:nth-child(even) .icon {
+        left: -70px;
+    }
+    .about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner::before {
+        left: -30px;
+    }
 
-                            <!--=== Testi item start ===-->
-                            <div class="testi-item">
-                                <i class="fas fa-quote-left left"></i>
-                                <i class="fas fa-quote-right right"></i>
-                                <p>A true professional. If you are looking for someone who really understands how to build a website. I'm highly recommend using this seller.</p>
-                                <img src="./img/testi03.png" alt="testimonial">
-                                <h2>Sadio Mané<br> <span>-founder & ceo hexa flame</span></h2>
-                            </div>
-                            <!--=== Testi item end ===-->
+    .footer-section h2{
+        font-size: 16px;
+    }
+    .footer-section h2 span a{
+        font-size: 18px;
+    }
+   
+}
+
+@media screen and (max-width: 574px){
+    .home-section .home-img .img-box{
+        max-width: 260px;
+    }
+    .home-section .home-text h2{
+        font-size: 40px;
+    }
+    .home-section .home-text p{
+        font-size: 16px;
+    }
+    .home-section .home-text h1{
+        font-size: 20px;
+    }
+    .effect-3{
+        margin-top: -15px;
+    }
+    .testimonial-section .testi-item p{
+        font-size: 14px;   
+    }
+}
+@media screen and (max-width: 450px){
+    .home-section .home-text h2{
+        font-size: 32px;
+    }
+    .effect-2{
+        bottom: 27%;
+    }
+    .header .logo a{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 359px){
+    .home-section .home-text h2{
+        font-size: 25px;
+    }
+    .effect-1{
+        bottom: 15%;
+        right: 4%;
+    }
+    .effect-2{
+        bottom: 27%;
+    }
+    .effect-4{
+        top: 17%;
+     }
+    .effect-5{
+       top: 45%;
+        right: 4%;
+    }
+    .home-section .home-text h1{
+        font-size: 17px;
+    }
+}
