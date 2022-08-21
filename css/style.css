@@ -247,7 +247,7 @@ img{
     color: var(--skin-color);
 }
 .section.hide{
-    display: none;
+    display: block;
 }
 /*================================   
         Header 

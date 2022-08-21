@@ -6,10 +6,31 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .effect-5{
+        right: 10%;
+    }
+    .effect-4{
+        left: 10%;
+        top: 20%;
+    }
+    .home-section .home-text, 
+    .home-section .home-img{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home-section .home-img{
+        margin-top: 20px;
+    }
+    .home-section .home-text{
+        order: 2;
+        text-align: center;
+        margin-top: -20px;
+    }
 }
 @media screen and (max-width: 767px){
     .header .logo a{
-        font-size: 20px;
+        font-size: 24px;
+       
     }
     .home-section .home-text, 
     .home-section .home-img,
