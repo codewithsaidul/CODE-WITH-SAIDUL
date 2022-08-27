@@ -290,18 +290,35 @@ function bodyScrolingToggle (){
 /*---------------------------- hide all section except active ------------------------------*/
 (() => {
     const sections = document.querySelectorAll(".section");
-    sections.forEach((section) =>{
-        if(!section.classList.contains("active")){
+    sections.forEach((section) => {
+        if (!section.classList.contains("active")) {
             section.classList.add("hide");
         }
     })
 })();
 
 
+/*-----
+Scroll Bar
+-----*/
+let progress = document.getElementById('progressbar');
+let totalHeigth = document.body.scrollHeight -
+    window.innerHeight;
+window.onscroll = function() {
+    let progressHeight = (window.pageYOffset / totalHeigth) * 100;
+    progress.style.height = progressHeight + "%";
+}
+/*-----
+Disable Right Click
+-----*/
+document.addEventListener("contextmenu", function(body) {
+    body.preventDefault();
+});
+
 /*------------------------ loader ----------------------*/
 window.addEventListener("load", () =>{
     document.querySelector(".preloader").classList.add("fade-out");
     setTimeout(() =>{
         document.querySelector(".preloader").style.display = "none";  
-    }, 5000)
+    }, 600)
 })

@@ -1368,4 +1368,15 @@ Contact Section
 
 
 
+/*-----
+Scroll Bar
+-----*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--skin-color);
+    border-radius: 10px;
+}
+
 
