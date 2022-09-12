@@ -311,9 +311,9 @@ window.onscroll = function() {
 /*-----
 Disable Right Click
 -----*/
-document.addEventListener("contextmenu", function(body) {
+/*document.addEventListener("contextmenu", function(body) {
     body.preventDefault();
-});
+});*/
 
 /*------------------------ loader ----------------------*/
 window.addEventListener("load", () =>{
